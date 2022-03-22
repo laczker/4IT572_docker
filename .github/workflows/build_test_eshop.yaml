@@ -4,12 +4,12 @@ on:
   workflow_dispatch:
   push:
 
-  jobs:
-    Install:
-      runs-on: ubuntu-latest
+jobs:
+  Install:
+    runs-on: ubuntu-latest
 
-      steps:
-        - name: Git Checkout
-          uses: actions/checkout@v3
-          with:
-            token: ${{ SECRETS.WORKFLOW_TOKEN }}
+    steps:
+      - name: Git Checkout
+        uses: actions/checkout@v3
+        with:
+          token: ${{ SECRETS.WORKFLOW_TOKEN }}
