@@ -8,7 +8,7 @@ describe('Shopping cart', () => {
     /* Open float cart */
     browser.click('.bag--float-cart-closed');
 
-    /* Bag kshould start with 0 products */
+    /* Bag should start with 0 products */
     browser.waitForText('.bag__quantity');
     let bagProductsQtd = browser.getText('.bag__quantity');
     expect(bagProductsQtd).to.equal('0');
